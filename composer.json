@@ -1,0 +1,24 @@
+{
+    "name": "magemontreal/stock-qty-graph-ql",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "MageMontreal",
+            "email": "support@magemontreal.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageMontreal\\StockQtyGraphQl\\": ""
+        }
+    }
+}

@@ -1,0 +1,3 @@
+interface ProductInterface {
+    stock_qty: Int @resolver(class: "\\MageMontreal\\StockQtyGraphQl\\Model\\StockQty") @doc(description: "Stock qty")
+}
