@@ -10,9 +10,28 @@
 
 ## Main Functionalities
 Added `stock_qty` to product GraphQl
+![image](https://user-images.githubusercontent.com/4007696/134252567-ab20fce9-a0a5-4566-8b68-74d61a620669.png)
+
+Example:
+```
+{
+  products(search: "Black", pageSize: 5) {
+    total_count
+    items {
+      name,
+      stock_qty,
+      sku
+    }
+    page_info {
+      page_size
+      current_page
+    }
+  }
+}
+```
 
 ## Installation
-Run: `composer require magemontreal/stock-qty-graph-ql`
+Run: `composer require magemontreal/stock-qty-graph-ql` and `bin/magento se:up`
 
 ### Type 1: Zip file
 
